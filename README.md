@@ -2,6 +2,7 @@
 *Simple pulse divider for irrigation flow meter*
 
 [![Build](https://img.shields.io/travis/claybar/pulse-divider/master.svg)](https://travis-ci.org/claybar/pulse-divider)
+[![Issues](https://img.shields.io/github/issues/claybar/pulse-divider/.svg)](https://github.com/claybar/pulse-divider/issues)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ---
