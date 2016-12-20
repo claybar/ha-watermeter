@@ -35,9 +35,11 @@ cache:
 
 install:
     - pip install -U platformio
+    - pip install cpplint
 
 script:
     - platformio run
+    - cpplint --recursive --filter=-whitespace/braces,-legal/copyright src
 
 
 #
