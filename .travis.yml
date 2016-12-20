@@ -42,8 +42,8 @@ install:
     - pip install cpplint
 
 script:
-    - if [[ "$PIO "]]; then platformio run; else cpplint --recursive --filter=-whitespace/braces,-legal/copyright src; fi
-  
+    - if [[ "$PIO" ]]; then platformio run; else cpplint --recursive --filter=-whitespace/braces,-legal/copyright src; fi
+
 #
 # Template #2: The project is intended to by used as a library with examples
 #
