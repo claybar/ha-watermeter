@@ -33,15 +33,17 @@ cache:
     directories:
         - "~/.platformio"
 
+env:
+    - PIO=true
+    - CPPLINT=true
+
 install:
     - pip install -U platformio
     - pip install cpplint
 
 script:
-    - platformio run
-    - cpplint --recursive --filter=-whitespace/braces,-legal/copyright src
-
-
+    - if [[ "$PIO "]]; then platformio run; else cpplint --recursive --filter=-whitespace/braces,-legal/copyright src; fi
+  
 #
 # Template #2: The project is intended to by used as a library with examples
 #
